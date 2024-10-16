@@ -61,8 +61,8 @@ a{
 }
 .reports{
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .report{
@@ -73,8 +73,4 @@ a{
     padding: 10px 20px;
     width: fit-content;
     max-width: 300px;
-}
-.report_number{
-
-
 }

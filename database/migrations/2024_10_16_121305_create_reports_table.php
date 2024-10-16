@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('reports', function (Blueprint $table) {
             $table->id();
             $table->string('number');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -26,4 +27,5 @@ return new class extends Migration
     {
         Schema::dropIfExists('reports');
     }
+
 };
